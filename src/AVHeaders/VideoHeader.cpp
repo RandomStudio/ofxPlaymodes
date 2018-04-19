@@ -309,6 +309,7 @@ float VideoHeader::getDelayPct()
 //------------------------------------------------------
 void VideoHeader::setDelayMs(float delayMs)
 {
+	ofLogNotice("fps", ofToString(fps));
 	double oneFrame=(TimeDiff)(1000000.0/fps/1.0);
 	int delayToSet = int(double(delayMs*1000.0));
 

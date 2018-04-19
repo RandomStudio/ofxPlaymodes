@@ -25,4 +25,5 @@ class testApp : public ofBaseApp{
 		ofxPm::VideoHeader header;
 		ofxPm::BasicVideoRenderer renderer;
 
+		float pct;
 };
