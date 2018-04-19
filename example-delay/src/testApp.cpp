@@ -25,7 +25,7 @@ void testApp::draw(){
 	header.draw();
 	buffer.draw();
 	ofDrawBitmapString("VideoFrame pool size: " + ofToString(VideoFrame::getPoolSize(VideoFormat(640,480,3))),20,ofGetHeight()-20);
-	ofDrawBitmapStringHighlight("pct: " + ofToString(pct, 3) + ", delay:" + ofToString(header.getDelayMs()), 10, 10);
+	ofDrawBitmapStringHighlight("pct: " + ofToString(pct, 3) + ", delay: " + ofToString(header.getDelayMs())  + "ms", 10, 10);
 
 }
 

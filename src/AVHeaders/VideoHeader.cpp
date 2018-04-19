@@ -66,6 +66,8 @@ void VideoHeader::draw(){
 	if(playing) ofSetColor(0,200,0);
 	else ofSetColor(255,128,0);
 
+	// current position
+	ofSetColor(0, 255, 0);
 	ofRect(currentLength+PMDRAWSPACING-oneLength,PMDRAWELEMENTSY+30,oneLength,10);
 	ofDrawBitmapString(ofToString(buffer->size()-1-currentPos),ofPoint(currentLength+PMDRAWSPACING-(oneLength/2),PMDRAWELEMENTSY+25));
 
